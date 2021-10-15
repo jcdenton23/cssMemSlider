@@ -119,3 +119,32 @@ input[name='point'] {
   color: #fff;
   font-size: 25px;
 }
+
+@media only screen and (max-width: 706px) {
+  .wrapper {
+    height: 85vh;
+  }
+
+  .slider {
+    margin-bottom: 0px;
+  }
+
+  .wrapper-2 {
+    flex-direction: column-reverse;
+  }
+
+  .controls {
+    align-self: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .descr {
+    font-size: 18px;
+  }
+
+  .bar {
+    height: 18px;
+    width: 18px;
+  }
+}
