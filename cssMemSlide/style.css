@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #202325;
+}
+
+.container {
+  padding: 50px 50px;
+}
+
+.wrapper {
+  width: 100%;
+  height: 90vh;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.controls {
+  display: flex;
+}
+.bar {
+  height: 24px;
+  width: 24px;
+  background-color: #72adff;
+  border: 1px #72adff solid;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+#slide1:checked ~ .wrapper-2 .controls label:nth-of-type(1),
+#slide2:checked ~ .wrapper-2 .controls label:nth-of-type(2),
+#slide3:checked ~ .wrapper-2 .controls label:nth-of-type(3),
+#slide4:checked ~ .wrapper-2 .controls label:nth-of-type(4),
+#slide5:checked ~ .wrapper-2 .controls label:nth-of-type(5) {
+  background-color: transparent;
+}
+
+.bar:hover {
+  background-color: #fff;
+  border: 1px #fff solid;
+}
+.bar:active {
+  opacity: 0.6;
+}
+
+.slider {
+  width: 500%;
+  height: 80%;
+  display: flex;
+  transition: 0.5s all;
+  margin-bottom: 30px;
+}
+
+.slides {
+  width: 20%;
+  height: 100%;
+}
+
+input[name='point'] {
+  display: none;
+}
+
+.slides img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+#slide1:checked ~ .slider,
+#slide1:checked ~ .wrapper-2 .slider-descr {
+  transform: translateX(0);
+}
+
+#slide2:checked ~ .slider,
+#slide2:checked ~ .wrapper-2 .slider-descr {
+  transform: translateX(-20%);
+}
+
+#slide3:checked ~ .slider,
+#slide3:checked ~ .wrapper-2 .slider-descr {
+  transform: translateX(-40%);
+}
+
+#slide4:checked ~ .slider,
+#slide4:checked ~ .wrapper-2 .slider-descr {
+  transform: translateX(-60%);
+}
+
+#slide5:checked ~ .slider,
+#slide5:checked ~ .wrapper-2 .slider-descr {
+  transform: translateX(-80%);
+}
+
+.wrapper-2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-descr-wrapper {
+  width: 70%;
+  overflow: hidden;
+}
+
+.slider-descr-wrapper .slider-descr {
+  width: 500%;
+  display: flex;
+  transition: all 0.4s;
+}
+
+.descr {
+  width: 20%;
+  color: #fff;
+  font-size: 25px;
+}
