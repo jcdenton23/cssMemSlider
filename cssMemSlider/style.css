@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-  padding: 50px 50px;
+  padding: 50px 30px;
 }
 
 .wrapper {
@@ -22,22 +22,35 @@ body {
 .controls {
   display: flex;
 }
+
+.label {
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 7px;
+  cursor: pointer;
+}
+
+.label:last-of-type {
+  margin-right: 0;
+}
+
 .bar {
-  height: 24px;
-  width: 24px;
+  height: 16px;
+  width: 16px;
   background-color: #72adff;
   border: 1px #72adff solid;
   border-radius: 50%;
-  margin-right: 10px;
-  cursor: pointer;
   transition: all 0.4s;
 }
 
-#slide1:checked ~ .wrapper-2 .controls label:nth-of-type(1),
-#slide2:checked ~ .wrapper-2 .controls label:nth-of-type(2),
-#slide3:checked ~ .wrapper-2 .controls label:nth-of-type(3),
-#slide4:checked ~ .wrapper-2 .controls label:nth-of-type(4),
-#slide5:checked ~ .wrapper-2 .controls label:nth-of-type(5) {
+#slide1:checked ~ .wrapper-2 .controls label:nth-of-type(1) .bar,
+#slide2:checked ~ .wrapper-2 .controls label:nth-of-type(2) .bar,
+#slide3:checked ~ .wrapper-2 .controls label:nth-of-type(3) .bar,
+#slide4:checked ~ .wrapper-2 .controls label:nth-of-type(4) .bar,
+#slide5:checked ~ .wrapper-2 .controls label:nth-of-type(5) .bar {
   background-color: transparent;
 }
 
@@ -126,6 +139,7 @@ input[name='point'] {
   }
 
   .slider {
+    height: 60%;
     margin-bottom: 0px;
   }
 
@@ -141,10 +155,5 @@ input[name='point'] {
 
   .descr {
     font-size: 18px;
-  }
-
-  .bar {
-    height: 18px;
-    width: 18px;
   }
 }
