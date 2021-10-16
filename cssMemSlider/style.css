@@ -136,6 +136,7 @@ input[name='point'] {
 @media only screen and (max-width: 1025px) {
   .wrapper {
     width: 80%;
+    height: 80vh;
   }
 }
 
