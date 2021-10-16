@@ -54,11 +54,11 @@ body {
   background-color: transparent;
 }
 
-.bar:hover {
+.label:hover .bar {
   background-color: #fff;
   border: 1px #fff solid;
 }
-.bar:active {
+.label:active .bar {
   opacity: 0.6;
 }
 
