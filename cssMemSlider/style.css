@@ -172,8 +172,8 @@ input[name='point'] {
 
   .controls {
     align-self: center;
-    margin-top: 8px;
-    margin-bottom: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   .descr {
@@ -184,5 +184,13 @@ input[name='point'] {
 @media only screen and (max-width: 565px) {
   .slider {
     height: 50%;
+  }
+  .label {
+    height: 36px;
+    width: 36px;
+  }
+  .controls {
+    margin-top: 7px;
+    margin-bottom: 7px;
   }
 }
