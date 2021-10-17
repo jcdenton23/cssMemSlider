@@ -24,8 +24,8 @@ body {
 }
 
 .label {
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,8 +38,8 @@ body {
 }
 
 .bar {
-  height: 16px;
-  width: 16px;
+  height: 18px;
+  width: 18px;
   background-color: #72adff;
   border: 1px #72adff solid;
   border-radius: 50%;
@@ -114,6 +114,7 @@ input[name='point'] {
 .wrapper-2 {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .slider-descr-wrapper {
@@ -167,8 +168,8 @@ input[name='point'] {
 
   .controls {
     align-self: center;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   .descr {
