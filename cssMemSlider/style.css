@@ -24,8 +24,8 @@ body {
 }
 
 .label {
-  height: 40px;
-  width: 40px;
+  height: 38px;
+  width: 38px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,8 +38,8 @@ body {
 }
 
 .bar {
-  height: 18px;
-  width: 18px;
+  height: 16px;
+  width: 16px;
   background-color: #72adff;
   border: 1px #72adff solid;
   border-radius: 50%;
@@ -166,10 +166,14 @@ input[name='point'] {
     flex-direction: column-reverse;
   }
 
+  .slider-descr-wrapper {
+    align-self: flex-start;
+  }
+
   .controls {
     align-self: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 9px;
+    margin-bottom: 9px;
   }
 
   .descr {
